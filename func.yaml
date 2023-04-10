@@ -1,0 +1,23 @@
+specVersion: 0.35.0
+name: hello-node-func
+runtime: node
+registry: ""
+image: ""
+imageDigest: ""
+created: 2023-04-10T15:49:11.980431844-03:00
+build:
+  buildpacks: []
+  builder: "s2i"
+  buildEnvs: []
+run:
+  volumes: []
+  envs: []
+deploy:
+  namespace: ""
+  remote: false
+  annotations: {}
+  options: {}
+  labels: []
+  healthEndpoints:
+    liveness: /health/liveness
+    readiness: /health/readiness
